@@ -1,0 +1,54 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+
+library(tidyverse)
+library(sf)
+library(tigris)
+library(RSocrata)
+
+options(tigris_class = "sf")
+
+```
+
+
+```{r ingest}
+
+parcel <- read_sf("https://opendata.arcgis.com/datasets/f8a69e7bd20c4250a151f8275174ec0c_0.geojson")
+test <- read.socrata("https://health.data.ny.gov/resource/rzpj-maap.json") %>% filter(county == "Onondaga")
+
+syr <- read_sf("https://services.arcgis.com/uDTUpUPbk8X8mXwl/arcgis/rest/services/Syracuse_City_Boundary/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson")
+
+zip <- read_sf("https://services.arcgis.com/uDTUpUPbk8X8mXwl/arcgis/rest/services/Zip_Code_Tabulation_Areas_for_Onondaga_County_(2014)/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson") %>% st_intersection(syr)
+ 
+## merge 
+data <- geo_join(zip,test,by_sp = "GEOID10", by_df = "zip", how = "inner") %>% 
+  select(-c(5:7),-c(10:11), -c(14), -(18:23), -c(26:32), -c(34:35))
+
+```
+
+
+
+```{r}
+ggplot() + geom_sf(data = parcel, fill = NA)
+```
+
+```{r}
+glimpse(data)
+
+data %>% group_by(year) %>% mutate(testcount = sum(as.numeric(tests))) %>% 
+  select(year, testcount)
+
+
+data %>% group_by(GEOID10) %>% mutate(testcount = sum(as.numeric(tests))) %>% 
+  select(GEOID10, testcount)
+
+
+data %>% select(year,tests)
+
+```
+
