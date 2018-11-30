@@ -1,2 +1,3 @@
 # WIP
-Work In Progress 
+
+A home for random / unfinished / unappreciated / or otherwise 'In Progress' scripts.
