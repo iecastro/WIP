@@ -1,0 +1,77 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(sf)
+library(tigris)
+
+options(tigris_class = "sf",tigris_use_cache = TRUE)
+
+lead_viol <- read_sf("https://opendata.arcgis.com/datasets/ee23a993bb8643498648c461317717a8_0.geojson")
+
+theme_map <- function(...){
+  theme_minimal() +
+  theme(axis.text = element_blank())
+}
+```
+
+```{r}
+syr <- places(state = "NY", cb = TRUE) %>% filter(NAME == "Syracuse")
+
+lead_viol %>% mutate(highlight = ifelse(property_owner_name == "GSPDC", "LB", "Other")) %>%
+ggplot() + geom_sf(aes(color = highlight), size = .90) +
+  scale_color_manual(values = c( "LB"="tomato", "Other"="black")) +
+  geom_sf(data = syr, fill = NA) +
+  guides(color = FALSE) +
+  theme_map()
+
+```
+
+```{r}
+glimpse(lead_viol)
+
+unique(lead_viol$case_status)
+
+lead_viol %>% group_by(case_status) %>% summarise(count = n())
+
+lead_viol %>% filter(case_status == "Open") %>%
+  group_by(TNT_NAME,neighborhood) %>% summarise(count = n()) %>%
+  ggplot(aes(reorder(neighborhood, -count),count, fill = TNT_NAME)) + 
+  geom_col() + theme_minimal() + theme(axis.text = element_text(color = "black")) +
+  coord_flip() + labs(x = "Neighborhood", y ="", fill = "TNT Area") +
+  scale_fill_viridis_d(option = "inferno")
+
+```
+```{r}
+lead_viol %>% group_by(property_owner_name) %>% summarise(count = n()) %>% 
+  filter(count > 1)
+
+```
+
+```{r}
+unique(lead_viol$nature_of_complaint)
+
+lead_viol  %>% filter(property_owner_name == "GSPDC")
+```
+
+```{r}
+unique(lead_viol$property_address)
+unique(lead_viol$neighborhood)
+unique(lead_viol$TNT_NAME)
+
+lead_viol$street <-  gsub("\\d", "",str_remove(lead_viol$property_address,"-")) %>%
+  str_wrap()
+
+lead_viol %>% filter(TNT_NAME %in% c("Northside","Southside", "Westside")) %>% group_by(TNT_NAME,street) %>% summarise(count=n()) %>%
+  ggplot(aes(street, count)) + geom_col() + coord_flip() +
+  facet_wrap(~TNT_NAME,scales = "free_y")
+
+```
+
+
+
+
+

@@ -1,0 +1,64 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+library(sf)
+library(tigris)
+
+options(tigris_class = "sf",tigris_use_cache = TRUE)
+
+temp <- tempfile()
+temp2 <- tempfile()
+download.file("https://www.va.gov/vetdata/docs/Maps/VAFacilitiesFY16Q4_web.gdb.zip",temp)
+unzip(temp, exdir = temp2)
+
+VAloc <- read_sf(file.path(dsn=temp2,layer="VAFacilitiesFY16Q4_web.gdb")) %>% st_zm()
+
+```
+
+```{r}
+glimpse(VAloc)
+unique(VAloc$PrimaryService)
+unique(VAloc$PrimaryAttribute)
+unique(VAloc$VAAdministration)
+```
+
+```{r}
+VAloc %>% group_by(PrimaryAttribute) %>% summarise(count = n())
+
+```
+
+```{r}
+VHA <- VAloc %>% filter(VAAdministration == "VHA") 
+
+VHA %>% group_by(PrimaryAttribute) %>% summarise(count = n())
+VHA %>% filter(PrimaryAttribute == "Unclassified")
+
+```
+
+```{r}
+
+NYVHA <- VHA %>% filter(StateAbbreviation == "NY") 
+NYS <- counties(state = "NY",cb = FALSE)
+ 
+theme_map <- function(...){
+  theme_minimal() +
+  theme(axis.text = element_blank())
+}
+
+ggplot() + geom_sf(data = NYVHA, aes(color = PrimaryAttribute, fill = PrimaryAttribute)) +
+  geom_sf(data = NYS, fill = NA) +
+  scale_color_viridis_d(option = "magma") + 
+  scale_fill_viridis_d(option = "magma") + guides(color = FALSE) +
+  theme_map()
+
+```
+
+
+
+
+
