@@ -1,0 +1,23 @@
+
+
+C27009_001E	Estimate!!Total	VA HEALTH CARE BY SEX BY AGE	
+C27009_002E	Estimate!!Total!!Male	VA HEALTH CARE BY SEX BY AGE	
+C27009_003E	Estimate!!Total!!Male!!Under 18 years	VA HEALTH CARE BY SEX BY AGE	
+C27009_004E	Estimate!!Total!!Male!!Under 18 years!!With VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_005E	Estimate!!Total!!Male!!Under 18 years!!No VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_006E	Estimate!!Total!!Male!!18 to 64 years	VA HEALTH CARE BY SEX BY AGE	
+C27009_007E	Estimate!!Total!!Male!!18 to 64 years!!With VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_008E	Estimate!!Total!!Male!!18 to 64 years!!No VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_009E	Estimate!!Total!!Male!!65 years and over	VA HEALTH CARE BY SEX BY AGE	
+C27009_010E	Estimate!!Total!!Male!!65 years and over!!With VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_011E	Estimate!!Total!!Male!!65 years and over!!No VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_012E	Estimate!!Total!!Female	VA HEALTH CARE BY SEX BY AGE	
+C27009_013E	Estimate!!Total!!Female!!Under 18 years	VA HEALTH CARE BY SEX BY AGE	
+C27009_014E	Estimate!!Total!!Female!!Under 18 years!!With VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_015E	Estimate!!Total!!Female!!Under 18 years!!No VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_016E	Estimate!!Total!!Female!!18 to 64 years	VA HEALTH CARE BY SEX BY AGE	
+C27009_017E	Estimate!!Total!!Female!!18 to 64 years!!With VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_018E	Estimate!!Total!!Female!!18 to 64 years!!No VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_019E	Estimate!!Total!!Female!!65 years and over	VA HEALTH CARE BY SEX BY AGE	
+C27009_020E	Estimate!!Total!!Female!!65 years and over!!With VA Health Care	VA HEALTH CARE BY SEX BY AGE	
+C27009_021E	Estimate!!Total!!Female!!65 years and over!!No VA Health Care	VA HEALTH CARE BY SEX BY AGE

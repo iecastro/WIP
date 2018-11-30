@@ -1,0 +1,7 @@
+
+B27010_025E	Estimate!!Total!!18 to 34 years!!With one type of health insurance coverage!!With VA Health Care only
+
+B27010_041E	Estimate!!Total!!35 to 64 years!!With one type of health insurance coverage!!With VA Health Care only
+
+B27010_057E	Estimate!!Total!!65 years and over!!With one type of health insurance coverage!!With VA Health Care only
+
