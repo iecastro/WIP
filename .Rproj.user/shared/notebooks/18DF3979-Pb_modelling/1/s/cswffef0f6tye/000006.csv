@@ -1,0 +1,4 @@
+"0","## merge 
+data <- geo_join(syr_tracts,test,by_sp = ""GEOID"", by_df = ""geoid"")
+"
+"2","st_crs<- : replacing crs does not reproject data; use st_transform for that"

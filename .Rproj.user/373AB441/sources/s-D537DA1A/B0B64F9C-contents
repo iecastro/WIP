@@ -34,10 +34,12 @@ test <- test %>% filter(year(date) %in% (2015:2018)) %>%
   filter(geoid != "monthly_total") %>% spread(2:3, key = "year", value = "pct_HBLL")
 
 write_csv(test,"highBLL.csv")
+
+syr_tracts <- tracts("NY", "Onondaga", cb = TRUE) %>%
+  filter(as.numeric(GEOID) < 36067006104)
  
 ## merge 
-data <- geo_join(zip,test,by_sp = "GEOID10", by_df = "geoid", how = "inner") %>% 
-  select(-c(5:7),-c(10:11), -c(14), -(18:23), -c(26:32), -c(34:35))
+data <- geo_join(syr_tracts,test,by_sp = "GEOID", by_df = "geoid")
 
 ```
 
