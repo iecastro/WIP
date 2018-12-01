@@ -5,4 +5,121 @@ $[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd
 [0K[?25h[?25l
 [0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
 $[0K[3G[?25h[?25l$ git add -all[0K[?25h[14G[13G[12G[11G[?25l$ git add --all[0K[12G[?25h[13G[14G[15G[16G[?25l
+[0K[?25h[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hi[0Kn[0Ki[0Kt[0Ki[0Ka[0Kl[0K[26G[25G[?25l$ git commit -m "initia[0K[?25h[?25l$ git commit -m "initi[0K[?25h[?25l$ git commit -m "init[0K[?25h[?25l$ git commit -m "ini[0K[?25h[?25l$ git commit -m "in[0K[?25h[?25l$ git commit -m "i[0K[?25h[?25l$ git commit -m "[0K[?25hm[0Ko[0Kv[0Ke[0K[23G[?25l$ git commit -m "move f[0K[?25hi[0Kl[0Ke[0Ks[0K[29G[?25l$ git commit -m "move files -[0K[?25h[31G[?25l$ git commit -m "move files - i[0K[?25hn[0Ki[0K[?25l$ git commit -m "move files - in[0K[?25hi[0Kt[0Ki[0Ka[0Kl[0K"[0K[?25l
+[0K[?25h[master 93ff551] move files - initial[0K[?25l
+ 15 files changed, 793 insertions(+)[0K
+ create mode 100644 .Rproj.user/373AB441/console06/1AD182DA[0K
+ create mode 100644 .Rproj.user/373AB441/console06/INDEX001[0K
+ create mode 100644 .Rproj.user/373AB441/sources/s-591C93E5/lock_file[0K
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names[0K
+ create mode 100644 DeathIndex/NYS_DI.Rmd[0K
+ create mode 100644 DeathIndex/NYS_DeathIndex.R[0K
+ create mode 100644 FacilitiesVA.Rmd[0K
+ create mode 100644 Gentrification.R[0K
+ create mode 100644 NYS_dotdensity_race.R[0K
+ create mode 100644 WIP.Rproj[0K
+ create mode 100644 lead_violations.Rmd[0K
+ create mode 100644 preterm_births/preterm_births.R[0K
+ create mode 100644 preterm_births/unt.R[0K
+ create mode 100644 preterm_births/unt2.R[0K
+ create mode 100644 school_shootings.R[0K
+[0K[?25h[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[?25l
+[0K[?25hEnumerating objects: 26, done.[0K[?25l
+[0K[?25h[?25lCounting objects:   7% (2/26)[0K[1G[?25h[?25lCounting objects:  15% (4/26)[0K[1G[?25h[?25lCounting objects:  23% (6/26)[0K[1G[?25h[?25lCounting objects:  30% (8/26)[0K[1G[?25h[?25lCounting objects:  38% (10/26)[0K[1G[?25h[?25lCounting objects:  50% (13/26)[0K[1G[?25h[?25lCounting objects:  57% (15/26)[0K[1G[?25h[?25lCounting objects:  69% (18/26)[0K[1G[?25h[?25lCounting objects:  76% (20/26)[0K[1G[?25h[?25lCounting objects:  80% (21/26)[0K[1G[?25h[?25lCounting objects:  84% (22/26)[0K[1G[?25h[?25lCounting objects:  92% (24/26)[0K[1G[?25hCounting objects: 100% (26/26), done.[0K[?25l
+Delta compression using up to 4 threads.[0K
+Compressing objects:  15% (3/20)[0K[1G[?25h[?25lCompressing objects:  20% (4/20)[0K[1G[?25h[?25lCompressing objects:  35% (7/20)[0K[1G[?25h[?25lCompressing objects:  50% (10/20)[0K[1G[?25h[?25lCompressing objects:  60% (12/20)[0K[1G[?25h[?25lCompressing objects:  75% (15/20)[0K[1G[?25h[?25lCompressing objects:  85% (17/20)[0K[1G[?25hCompressing objects: 100% (20/20), done.[0K[?25l
+[0K[?25h[?25lWriting objects:  24% (6/25)[0K[1G[?25h[?25lWriting objects:  32% (8/25)[0K[1G[?25h[?25lWriting objects:  44% (11/25)[0K[1G[?25h[?25lWriting objects:  52% (13/25)[0K[1G[?25h[?25lWriting objects:  60% (15/25)[0K[1G[?25h[?25lWriting objects:  64% (16/25)[0K[1G[?25h[?25lWriting objects:  68% (17/25)[0K[1G[?25h[?25lWriting objects:  72% (18/25)[0K[1G[?25h[?25lWriting objects:  84% (21/25)[0K[1G[?25h[?25lWriting objects:  96% (24/25)[0K[1G[?25hWriting objects: 100% (25/25), 10.34 KiB | 27.00 KiB/s, done.[0K[?25l
+Total 25 (delta 2), reused 0 (delta 0)[0K
+[0K[?25hremote: Resolving deltas: 100% (2/2), done.[0K[?25l
+[0K[?25h[?25lTo https://github.com/iecastro/WIP.git[0K[25G[?25h[?25l
+   8fabf34..93ff551  master -> master[0K
+[0K[?25h[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
+]0;://hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
+$[0K[1G[?25h[3G[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Ku[0Ks[0K[?25l$ git stau[0K[?25h[?25l$ git sta[0K[?25ht[0Ku[0Ks[0K[?25l
+[0K[?25hOn branch master[0K[?25l
+Your branch is up to date with 'origin/master'.[0K
+[0K
+Changes not staged for commit:[0K
+  (use "git add/rm <file>..." to update what will be committed)[0K
+  (use "git checkout -- <file>..." to discard changes in working directory)[0K
+[0K
+        [0;31mmodified:   .Rproj.user/373AB441/console06/1AD182DA[0m[0K
+        [0;31mmodified:   .Rproj.user/373AB441/console06/INDEX001[0m[0K
+        [0;31mdeleted:    .Rproj.user/373AB441/sources/s-591C93E5/lock_file[0m[0K
+[0K
+Untracked files:[0K
+  (use "git add <file>..." to include in what will be committed)[0K
+[0K
+        [0;31m.Rproj.user/373AB441/pcs/[0m[0K
+        [0;31m.Rproj.user/373AB441/rmd-outputs[0m[0K
+        [0;31m.Rproj.user/373AB441/saved_source_markers[0m[0K
+        [0;31m.Rproj.user/373AB441/sources/s-D537DA1A/[0m[0K
+[0K
+no changes added to commit (use "git add" and/or "git commit -a")[0K
+[0K[?25h[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[?25l
+[0K[?25hremote: Enumerating objects: 23, done.[0K[?25l
+remote: Counting objects: 100% (23/23), done.[0K
+remote: Compressing objects:  15% (3/20)[0K[1G[?25hremote: Compressing objects: 100% (20/20), done.[0K[?25l
+[0K[?25h[?25lUnpacking objects:   4% (1/22)[0K[1G[?25h[?25lUnpacking objects:   9% (2/22)[0K[1G[?25h[?25lUnpacking objects:  13% (3/22)[0K[1G[?25h[?25lUnpacking objects:  18% (4/22)[0K[1G[?25h[?25lUnpacking objects:  22% (5/22)[0K[1G[?25h[?25lUnpacking objects:  27% (6/22)[0K[1G[?25h[?25lUnpacking objects:  31% (7/22)[0K[1G[?25h[?25lUnpacking objects:  36% (8/22)[0K[1G[?25h[?25lUnpacking objects:  40% (9/22)[0K[1G[?25h[?25lUnpacking objects:  45% (10/22)[0K[1G[?25h[?25lUnpacking objects:  50% (11/22)[0K[1G[?25h[?25lUnpacking objects:  54% (12/22)[0K[1G[?25h[?25lUnpacking objects:  59% (13/22)[0K[1G[?25h[?25lUnpacking objects:  63% (14/22)[0K[1G[?25h[?25lUnpacking objects:  68% (15/22)[0K[1G[?25hremote: Total 22 (delta 6), reused 0 (delta 0), pack-reused 0[0K[?25l
+[0K[?25h[?25lUnpacking objects:  77% (17/22)[0K[1G[?25h[?25lUnpacking objects:  81% (18/22)[0K[1G[?25h[?25lUnpacking objects:  86% (19/22)[0K[1G[?25h[?25lUnpacking objects:  90% (20/22)[0K[1G[?25h[?25lUnpacking objects:  95% (21/22)[0K[1G[?25h[?25lUnpacking objects: 100% (22/22), done.[0K[1G[?25h[?25l
+[0K[?25hFrom https://github.com/iecastro/WIP[0K[?25l
+   93ff551..3d48a2b  master     -> origin/master[0K
+[0K[?25h[?25lChecking out files:  40% (4/10)[0K[1G[?25h[?25lChecking out files:  50% (5/10)[0K[1G[?25h[?25lChecking out files:  60% (6/10)[0K[1G[?25h[?25lChecking out files:  70% (7/10)[0K[1G[?25h[?25lChecking out files:  80% (8/10)[0K[1G[?25h[?25lChecking out files:  90% (9/10)[0K[1G[?25h[?25lChecking out files: 100% (10/10)[0K[1G[?25hChecking out files: 100% (10/10), done.[0K[?25l
+[0K[?25hUpdating 93ff551..3d48a2b[0K[?25l
+Fast-forward[0K
+[0K[?25h Pb_modelling.Rmd                          |  54 [0;32m+++++++++++++++++++++++++[0m[0K[?25l
+ VAcoverage/1-ingest.R                     |  46 [0;32m+++++++++++++++++++++[0m[0K
+ VAcoverage/VA healthcare by PC.txt        |  23 [0;32m+++++++++++[0m[0K
+ VAcoverage/blank                          |   1 [0;32m+[0m[0K
+ VAcoverage/health coverage_VA only.txt    |   7 [0;32m++++[0m[0K
+ VAcoverage/veteran x poverty status.txt   |  62 [0;32m+++++++++++++++++++++++++++++[0m[0K
+ mentalhealth/NEPEC_ptsd.R                 |  64 [0;32m++++++++++++++++++++++++++++++[0m[0K
+ mentalhealth/NYSOMH.Rmd                   |  15 [0;32m+++++++[0m[0K
+ mentalhealth/NepecPtsdDataDictionary.xlsx | Bin [0;31m0[0m -> [0;32m25708[0m bytes[0K
+ mentalhealth/blank                        |   1 [0;32m+[0m[0K
+ 10 files changed, 273 insertions(+)[0K
+ create mode 100644 Pb_modelling.Rmd[0K
+ create mode 100644 VAcoverage/1-ingest.R[0K
+ create mode 100644 VAcoverage/VA healthcare by PC.txt[0K
+ create mode 100644 VAcoverage/blank[0K
+ create mode 100644 VAcoverage/health coverage_VA only.txt[0K
+ create mode 100644 VAcoverage/veteran x poverty status.txt[0K
+ create mode 100644 mentalhealth/NEPEC_ptsd.R[0K
+ create mode 100644 mentalhealth/NYSOMH.Rmd[0K
+ create mode 100644 mentalhealth/NepecPtsdDataDictionary.xlsx[0K
+ create mode 100644 mentalhealth/blank[0K
+[0K[?25h[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K[87G[?25h[?25l
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
+[0K[?25hOn branch master[0K[?25l
+Your branch is up to date with 'origin/master'.[0K
+[0K
+Changes not staged for commit:[0K
+  (use "git add/rm <file>..." to update what will be committed)[0K
+  (use "git checkout -- <file>..." to discard changes in working directory)[0K
+[0K
+        [0;31mmodified:   .Rproj.user/373AB441/console06/1AD182DA[0m[0K
+        [0;31mmodified:   .Rproj.user/373AB441/console06/INDEX001[0m[0K
+        [0;31mdeleted:    .Rproj.user/373AB441/sources/s-591C93E5/lock_file[0m[0K
+[0K
+Untracked files:[0K
+  (use "git add <file>..." to include in what will be committed)[0K
+[0K
+        [0;31m.Rproj.user/373AB441/pcs/[0m[0K
+        [0;31m.Rproj.user/373AB441/rmd-outputs[0m[0K
+        [0;31m.Rproj.user/373AB441/saved_source_markers[0m[0K
+        [0;31m.Rproj.user/373AB441/sources/s-D537DA1A/[0m[0K
+[0K
+no changes added to commit (use "git add" and/or "git commit -a")[0K
+[0K[?25h[?25l
+[0;32miecastro@FALK-PH-NSF-L10 [0;35m [0;33m//hd.ad.syr.edu/02/c3964a/Documents/Desktop/DataProjects/WIP[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add -[0K[?25hA[0K[?25l
 [0K[?25h

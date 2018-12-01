@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543706371898.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3781834799",
+    "id" : "B0B64F9C",
+    "lastKnownWriteTime" : 1543706989,
+    "last_content_update" : 1543706990012,
+    "path" : "~/Desktop/DataProjects/WIP/Pb_modelling.Rmd",
+    "project_path" : "Pb_modelling.Rmd",
+    "properties" : {
+        "cursorPosition" : "38,76",
+        "last_setup_crc32" : "D537DA1A1b63c03d",
+        "scrollLine" : "27"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
